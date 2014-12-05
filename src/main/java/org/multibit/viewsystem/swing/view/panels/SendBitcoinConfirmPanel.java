@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.view.panels;
 
-import com.google.dogecoin.core.Sha256Hash;
-import com.google.dogecoin.core.Transaction;
-import com.google.dogecoin.core.Utils;
-import com.google.dogecoin.core.Wallet.SendRequest;
+import com.google.digibyte.core.Sha256Hash;
+import com.google.digibyte.core.Transaction;
+import com.google.digibyte.core.Utils;
+import com.google.digibyte.core.Wallet.SendRequest;
 import org.bitcoinj.wallet.Protos.Wallet.EncryptionType;
 import org.multibit.MultiBit;
 import org.multibit.controller.Controller;
@@ -43,7 +43,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * The send dogecoin confirm panel.
+ * The send digibyte confirm panel.
  */
 public class SendBitcoinConfirmPanel extends JPanel implements WalletBusyListener {
     private static final long serialVersionUID = 191435612399957705L;
@@ -116,7 +116,7 @@ public class SendBitcoinConfirmPanel extends JPanel implements WalletBusyListene
     }
 
     /**
-     * Initialise dogecoin confirm panel.
+     * Initialise digibyte confirm panel.
      */
     public void initUI() {
         JPanel mainPanel = new JPanel();

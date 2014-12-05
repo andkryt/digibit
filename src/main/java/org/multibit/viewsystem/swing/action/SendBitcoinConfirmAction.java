@@ -15,12 +15,12 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.AddressFormatException;
-import com.google.dogecoin.core.Utils;
-import com.google.dogecoin.core.Wallet.SendRequest;
-import com.google.dogecoin.core.WrongNetworkException;
-import com.google.dogecoin.crypto.KeyCrypterException;
+import com.google.digibyte.core.Address;
+import com.google.digibyte.core.AddressFormatException;
+import com.google.digibyte.core.Utils;
+import com.google.digibyte.core.Wallet.SendRequest;
+import com.google.digibyte.core.WrongNetworkException;
+import com.google.digibyte.crypto.KeyCrypterException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.message.Message;
 import org.multibit.message.MessageManager;
@@ -38,7 +38,7 @@ import java.awt.event.ActionEvent;
 import java.math.BigInteger;
 
 /**
- * This {@link Action} shows the send dogecoin confirm dialog or validation dialog on an attempted spend.
+ * This {@link Action} shows the send digibyte confirm dialog or validation dialog on an attempted spend.
  */
 public class SendBitcoinConfirmAction extends MultiBitSubmitAction {
 
@@ -61,7 +61,7 @@ public class SendBitcoinConfirmAction extends MultiBitSubmitAction {
     }
 
     /**
-     * Complete the transaction to work out the fee) and then show the send dogecoin confirm dialog.
+     * Complete the transaction to work out the fee) and then show the send digibyte confirm dialog.
      */
     @Override
     public void actionPerformed(ActionEvent e) {

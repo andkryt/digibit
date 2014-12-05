@@ -15,10 +15,10 @@
  */
 package org.multibit.viewsystem.swing.action;
 
-import com.google.dogecoin.core.Address;
-import com.google.dogecoin.core.AddressFormatException;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.WrongNetworkException;
+import com.google.digibyte.core.Address;
+import com.google.digibyte.core.AddressFormatException;
+import com.google.digibyte.core.ECKey;
+import com.google.digibyte.core.WrongNetworkException;
 import org.multibit.controller.bitcoin.BitcoinController;
 import org.multibit.model.bitcoin.WalletBusyListener;
 import org.multibit.utils.WhitespaceTrimmer;

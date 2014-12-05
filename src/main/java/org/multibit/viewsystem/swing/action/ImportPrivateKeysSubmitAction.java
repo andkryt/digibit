@@ -54,11 +54,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.params.KeyParameter;
 
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Utils;
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.crypto.KeyCrypter;
-import com.google.dogecoin.crypto.KeyCrypterException;
+import com.google.digibyte.core.ECKey;
+import com.google.digibyte.core.Utils;
+import com.google.digibyte.core.Wallet;
+import com.google.digibyte.crypto.KeyCrypter;
+import com.google.digibyte.crypto.KeyCrypterException;
 import com.piuk.blockchain.MyWallet;
 
 /**

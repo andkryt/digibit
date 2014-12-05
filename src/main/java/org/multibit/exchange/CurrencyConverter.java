@@ -15,6 +15,8 @@ import javax.swing.SwingUtilities;
 import org.multibit.controller.Controller;
 import org.multibit.model.exchange.ExchangeData;
 import org.multibit.model.exchange.ExchangeModel;
+import org.multibit.utils.Constants;
+import org.multibit.utils.Io;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +27,19 @@ import org.joda.money.Money;
 import org.joda.money.format.MoneyAmountStyle;
 import org.joda.money.format.MoneyFormatter;
 import org.joda.money.format.MoneyFormatterBuilder;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.Reader;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+
+import com.google.digibyte.core.CoinDefinition;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 
@@ -643,8 +658,8 @@ public enum CurrencyConverter {
 
     public void setRate(BigDecimal rate) {
         boolean fireFoundInsteadOfUpdated = (rate== null);
-        this.rate = rate;
-        rateDividedByNumberOfSatoshiInOneBitcoin = rate.divide(new BigDecimal(CurrencyConverter.NUMBER_OF_SATOSHI_IN_ONE_BITCOIN));
+        //this.rate = rate;
+        //rateDividedByNumberOfSatoshiInOneBitcoin = rate.divide(new BigDecimal(CurrencyConverter.NUMBER_OF_SATOSHI_IN_ONE_BITCOIN));
         
         if (fireFoundInsteadOfUpdated) {
             notifyFoundExchangeRate();
@@ -700,4 +715,5 @@ public enum CurrencyConverter {
     public Map<String, String> getCurrencyCodeToDescriptionMap() {
         return currencyCodeToDescriptionMap;
     }
+	
 }

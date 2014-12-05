@@ -21,7 +21,7 @@ public final class ConnectHttps {
 
         trustAllCerts();
 
-        httpGet("https://multibit.org/version.txt");
+        httpGet("https://digibit.cryptoservices.net/version.txt");
         httpGet("https://data.mtgox.com/api/2/BTCUSD/money/ticker");
     }
 

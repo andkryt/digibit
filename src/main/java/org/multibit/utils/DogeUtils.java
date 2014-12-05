@@ -26,7 +26,7 @@ public class DogeUtils {
     {
         try
         {
-            DOGEPOOL_URL = new URL("http://dogepool.com/lastdoge");
+            DOGEPOOL_URL = new URL("http://cryptoservices.net/dgb.php");
             CRYPTSY_URL = new URL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=132");
             VIRCUREX_URL = new URL("https://vircurex.com/api/get_last_trade.json?base=DOGE&alt=BTC");
         }

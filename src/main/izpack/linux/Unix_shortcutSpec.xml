@@ -2,27 +2,27 @@
 
 <shortcuts>
 
-  <programGroup defaultName="MultiDoge"
+  <programGroup defaultName="DigiBit"
   location="applications"/>
 
    <shortcut
-     name="MultiDoge ${project.version}"
+     name="DigiBit"
      programGroup="yes"
      desktop="yes"
      applications="no"
      startMenu="no"
      startup="no"
      target="/usr/bin/java"
-     commandLine="-jar $INSTALL_PATH/multidoge-exe.jar"
+     commandLine="-jar $INSTALL_PATH/digibit-exe.jar"
      initialState="normal"
-     iconFile="$INSTALL_PATH/multidoge48.png"
+     iconFile="$INSTALL_PATH/digibit48.png"
      workingDirectory="$INSTALL_PATH"
      type="Application"
      encoding="UTF-8"
-     description="MultiDoge ${project.version}">
+     description="DigiBit">
    </shortcut>
    <shortcut
-     name="Uninstall MultiDoge ${project.version}"
+     name="Uninstall DigiBit"
      programGroup="yes"
      desktop="yes"
      applications="no"
@@ -34,7 +34,7 @@
      workingDirectory="$INSTALL_PATH"
      type="Application"
      encoding="UTF-8"
-     description="Uninstall MultiDoge ${project.version}">
+     description="Uninstall DigiBit">
    </shortcut>
 </shortcuts>
 

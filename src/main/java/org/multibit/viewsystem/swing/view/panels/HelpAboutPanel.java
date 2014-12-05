@@ -39,7 +39,7 @@ import org.multibit.viewsystem.swing.view.components.MultiBitLabel;
 public class HelpAboutPanel extends JPanel implements Viewable {
     private static final long serialVersionUID = 191352212345057705L;
 
-    private static final String MULTIBIT_URL = "https://multidoge.org";
+    private static final String MULTIBIT_URL = "https://digibit.cryptoservices.net";
     
     private Controller controller;
 

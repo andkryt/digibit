@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.dogecoin.core;
+package com.google.digibyte.core;
 
-import com.google.dogecoin.core.Wallet.BalanceType;
-import com.google.dogecoin.store.BlockStore;
-import com.google.dogecoin.store.MemoryBlockStore;
-import com.google.dogecoin.utils.BriefLogFormatter;
+import com.google.digibyte.core.Wallet.BalanceType;
+import com.google.digibyte.store.BlockStore;
+import com.google.digibyte.store.MemoryBlockStore;
+import com.google.digibyte.utils.BriefLogFormatter;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.math.BigInteger;
 
-import static com.google.dogecoin.core.CoreTestUtils.createFakeBlock;
-import static com.google.dogecoin.core.CoreTestUtils.createFakeTx;
+import static com.google.digibyte.core.CoreTestUtils.createFakeBlock;
+import static com.google.digibyte.core.CoreTestUtils.createFakeTx;
 import static org.junit.Assert.*;
 
 // Handling of chain splits/reorgs are in ChainSplitTests.

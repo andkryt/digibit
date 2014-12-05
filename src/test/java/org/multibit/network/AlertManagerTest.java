@@ -24,8 +24,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.multibit.Localiser;
 import org.multibit.controller.bitcoin.BitcoinController;
-import com.google.dogecoin.core.ECKey;
-import com.google.dogecoin.core.Utils;
+import com.google.digibyte.core.ECKey;
+import com.google.digibyte.core.Utils;
 import org.multibit.CreateControllers;
 
 public class AlertManagerTest extends TestCase {

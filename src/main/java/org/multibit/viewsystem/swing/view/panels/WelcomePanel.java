@@ -29,6 +29,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
+
 
 import org.multibit.controller.Controller;
 import org.multibit.model.core.CoreModel;
@@ -77,6 +79,9 @@ public class WelcomePanel extends JPanel implements Viewable {
         mainPanel.setLayout(new GridBagLayout());
         mainPanel.setOpaque(false);
         mainPanel.applyComponentOrientation(ComponentOrientation.getOrientation(controller.getLocaliser().getLocale()));
+		
+		ImageIcon image = new ImageIcon("/images/digibit128.png");
+        JLabel imagelabel = new JLabel(image);
 
         GridBagConstraints constraints = new GridBagConstraints();
 
@@ -163,11 +168,11 @@ public class WelcomePanel extends JPanel implements Viewable {
         MultiBitTitledPanel.addLeftJustifiedTextAtIndent(" ", 3, welcomePanel);
 
         String paragraph1 = controller.getLocaliser().getString("welcomePanel.paragraph1");
-        int height1 = calculateHeight(paragraph1);
+        int height2 = calculateHeight(paragraph1);
 
-        MultiBitTextArea paragraph1TextArea = new MultiBitTextArea(paragraph1, height1, TEXT_WIDTH, controller);
-        paragraph1TextArea.setMinimumSize(new Dimension(preferredWidth, height1 * fontHeight));
-        paragraph1TextArea.setPreferredSize(new Dimension(preferredWidth, height1 * fontHeight));
+        MultiBitTextArea paragraph1TextArea = new MultiBitTextArea(paragraph1, height2, TEXT_WIDTH, controller);
+        paragraph1TextArea.setMinimumSize(new Dimension(preferredWidth, height2 * fontHeight));
+        paragraph1TextArea.setPreferredSize(new Dimension(preferredWidth, height2 * fontHeight));
         paragraph1TextArea.setOpaque(false);
         paragraph1TextArea.setWrapStyleWord(true);
         paragraph1TextArea.setLineWrap(true);
@@ -184,11 +189,11 @@ public class WelcomePanel extends JPanel implements Viewable {
         welcomePanel.add(paragraph1TextArea, constraints);
 
         String paragraph2 = controller.getLocaliser().getString("welcomePanel.paragraph2");
-        int height2 = calculateHeight(paragraph2);
+        int height3 = calculateHeight(paragraph2);
 
-        MultiBitTextArea paragraph2TextArea = new MultiBitTextArea(paragraph2, height2, TEXT_WIDTH, controller);
-        paragraph2TextArea.setMinimumSize(new Dimension(preferredWidth, height2 * fontHeight));
-        paragraph2TextArea.setPreferredSize(new Dimension(preferredWidth, height2 * fontHeight));
+        MultiBitTextArea paragraph2TextArea = new MultiBitTextArea(paragraph2, height3, TEXT_WIDTH, controller);
+        paragraph2TextArea.setMinimumSize(new Dimension(preferredWidth, height3 * fontHeight));
+        paragraph2TextArea.setPreferredSize(new Dimension(preferredWidth, height3 * fontHeight));
         paragraph2TextArea.setOpaque(false);
         paragraph2TextArea.setWrapStyleWord(true);
         paragraph2TextArea.setLineWrap(true);
@@ -226,11 +231,11 @@ public class WelcomePanel extends JPanel implements Viewable {
         welcomePanel.add(paragraph25TextArea, constraints);
 
         String paragraph3 = controller.getLocaliser().getString("welcomePanel.paragraph3");
-        int height3 = calculateHeight(paragraph3);
+        int height4 = calculateHeight(paragraph3);
 
-        MultiBitTextArea paragraph3TextArea = new MultiBitTextArea(paragraph3, height3, TEXT_WIDTH, controller);
-        paragraph3TextArea.setMinimumSize(new Dimension(preferredWidth, height3 * fontHeight));
-        paragraph3TextArea.setPreferredSize(new Dimension(preferredWidth, height3 * fontHeight));
+        MultiBitTextArea paragraph3TextArea = new MultiBitTextArea(paragraph3, height4, TEXT_WIDTH, controller);
+        paragraph3TextArea.setMinimumSize(new Dimension(preferredWidth, height4 * fontHeight));
+        paragraph3TextArea.setPreferredSize(new Dimension(preferredWidth, height4 * fontHeight));
         paragraph3TextArea.setOpaque(false);
         paragraph3TextArea.setWrapStyleWord(true);
         paragraph3TextArea.setLineWrap(true);
@@ -247,11 +252,11 @@ public class WelcomePanel extends JPanel implements Viewable {
         welcomePanel.add(paragraph3TextArea, constraints);
 
         String paragraph4 = controller.getLocaliser().getString("welcomePanel.paragraph4");
-        int height4 = calculateHeight(paragraph4);
+        int height5 = calculateHeight(paragraph4);
 
-        MultiBitTextArea paragraph4TextArea = new MultiBitTextArea(paragraph4, height4, TEXT_WIDTH, controller);
-        paragraph4TextArea.setMinimumSize(new Dimension(preferredWidth, height4 * fontHeight));
-        paragraph4TextArea.setPreferredSize(new Dimension(preferredWidth, height4 * fontHeight));
+        MultiBitTextArea paragraph4TextArea = new MultiBitTextArea(paragraph4, height5, TEXT_WIDTH, controller);
+        paragraph4TextArea.setMinimumSize(new Dimension(preferredWidth, height5 * fontHeight));
+        paragraph4TextArea.setPreferredSize(new Dimension(preferredWidth, height5 * fontHeight));
         paragraph4TextArea.setOpaque(false);
         paragraph4TextArea.setWrapStyleWord(true);
         paragraph4TextArea.setLineWrap(true);
@@ -266,6 +271,27 @@ public class WelcomePanel extends JPanel implements Viewable {
         constraints.gridwidth = 3;
         constraints.anchor = GridBagConstraints.LINE_START;
         welcomePanel.add(paragraph4TextArea, constraints);
+		
+		String paragraph6 = controller.getLocaliser().getString("welcomePanel.paragraph6");
+        int height1 = calculateHeight(paragraph3);
+
+        MultiBitTextArea paragraph6TextArea = new MultiBitTextArea(paragraph6, height1, TEXT_WIDTH, controller);
+        paragraph3TextArea.setMinimumSize(new Dimension(preferredWidth, height1 * fontHeight));
+        paragraph3TextArea.setPreferredSize(new Dimension(preferredWidth, height1 * fontHeight));
+        paragraph3TextArea.setOpaque(false);
+        paragraph3TextArea.setWrapStyleWord(true);
+        paragraph3TextArea.setLineWrap(true);
+        paragraph3TextArea.setEditable(false);
+        //paragraph3TextArea.setBorder(BorderFactory.createLineBorder(Color.RED));
+
+        constraints.fill = GridBagConstraints.HORIZONTAL;
+        constraints.gridx = 1;
+        constraints.gridy = 7;
+        constraints.weightx = 1.0;
+        constraints.weighty = 1.0;
+        constraints.gridwidth = 3;
+        constraints.anchor = GridBagConstraints.LINE_START;
+        welcomePanel.add(paragraph3TextArea, constraints);
 
         JLabel filler1 = new JLabel();
         filler1.setOpaque(false);

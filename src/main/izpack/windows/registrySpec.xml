@@ -2,41 +2,41 @@
 Require the following structure on Windows
 see http://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx
 
-dogecoin.reg:
+digibyte.reg:
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\dogecoin]
-@="URL:Dogecoin Protocol"
+[HKEY_CLASSES_ROOT\digibyte]
+@="URL:Digibyte Protocol"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\dogecoin\DefaultIcon]
-@="multidoge.exe,1"
+[HKEY_CLASSES_ROOT\digibyte\DefaultIcon]
+@="digibit.exe,1"
 
-[HKEY_CLASSES_ROOT\dogecoin\shell]
+[HKEY_CLASSES_ROOT\digibyte\shell]
 
-[HKEY_CLASSES_ROOT\dogecoin\shell\open]
+[HKEY_CLASSES_ROOT\digibyte\shell\open]
 
-[HKEY_CLASSES_ROOT\dogecoin\shell\open\command]
-@="\"C:\\Program Files\\MultiDoge-0.2.0beta4\\multidoge.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\digibyte\shell\open\command]
+@="\"C:\\Program Files\\DigiBit-0.2.0beta4\\digibit.exe\" \"%1\""
 
 
 -->
 <registry>
-  <pack name="MultiDoge">
-    <key root="HKCR" keypath="dogecoin" />
-    <value root="HKCR" name="" keypath="dogecoin" string="URL:Dogecoin Protocol"/>
-    <value root="HKCR" name="URL Protocol" keypath="dogecoin" string=""/>
-    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="dogecoin" dword="1"/>
+  <pack name="DigiBit">
+    <key root="HKCR" keypath="digibyte" />
+    <value root="HKCR" name="" keypath="digibyte" string="URL:Digibyte Protocol"/>
+    <value root="HKCR" name="URL Protocol" keypath="digibyte" string=""/>
+    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="digibyte" dword="1"/>
 
-    <key root="HKCR" keypath="dogecoin\DefaultIcon" />
-    <value root="HKCR" name="" keypath="dogecoin\DefaultIcon" string="multidoge.exe,1"/>
+    <key root="HKCR" keypath="digibyte\DefaultIcon" />
+    <value root="HKCR" name="" keypath="digibyte\DefaultIcon" string="digibit.exe,1"/>
 
-    <key root="HKCR" keypath="dogecoin\shell" />
+    <key root="HKCR" keypath="digibyte\shell" />
 
-    <key root="HKCR" keypath="dogecoin\shell\open" />
+    <key root="HKCR" keypath="digibyte\shell\open" />
 
-    <key root="HKCR" keypath="dogecoin\shell\open\command" />
-    <value root="HKCR" keypath="dogecoin\shell\open\command" name="" string="&quot;$INSTALL_PATH\multidoge.exe&quot; &quot;%1&quot;" />
+    <key root="HKCR" keypath="digibyte\shell\open\command" />
+    <value root="HKCR" keypath="digibyte\shell\open\command" name="" string="&quot;$INSTALL_PATH\digibit.exe&quot; &quot;%1&quot;" />
 
   </pack>
 </registry>

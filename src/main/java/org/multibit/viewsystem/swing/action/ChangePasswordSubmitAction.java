@@ -35,9 +35,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.util.Arrays;
 
-import com.google.dogecoin.core.Wallet;
-import com.google.dogecoin.crypto.KeyCrypter;
-import com.google.dogecoin.crypto.KeyCrypterException;
+import com.google.digibyte.core.Wallet;
+import com.google.digibyte.crypto.KeyCrypter;
+import com.google.digibyte.crypto.KeyCrypterException;
 
 
 /**

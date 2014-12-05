@@ -51,9 +51,9 @@ public final class ImageLoader {
     public static final String MESSAGE_SIGN_ICON_FILE = "/images/messageSign.png";
     public static final String MESSAGE_VERIFY_ICON_FILE = "/images/messageVerify.png";
     public static final String MONEY_ICON_FILE = "/images/money.png";
-    public static final String MULTIBIT_128_ICON_FILE = "/images/multidoge128.png";
-    public static final String MULTIBIT_ICON_FILE = "/images/multidoge.png";
-    public static final String MULTIBIT_SMALL_ICON_FILE = "/images/multidoge-small.png";
+    public static final String MULTIBIT_128_ICON_FILE = "/images/digibit128.png";
+    public static final String MULTIBIT_ICON_FILE = "/images/digibit.png";
+    public static final String MULTIBIT_SMALL_ICON_FILE = "/images/digibit-small.png";
     public static final String OPEN_WALLET_ICON_FILE = "/images/openWallet.png";
     public static final String PASTE_ICON_FILE = "/images/paste.png";
     public static final String PREFERENCES_ICON_FILE = "/images/preferences.png";
@@ -78,6 +78,7 @@ public final class ImageLoader {
     public static final String WELCOME_ICON_FILE = "/images/welcome.png";
     public static final String YOUR_WALLETS_ICON_FILE = "/images/yourWallets.png";
     public static final String ZOOM_ICON_FILE = "/images/zoom.png";
+	public static final ImageIcon image = new ImageIcon("/images/digibit128.png");
 
     /**
      * Utility class should not have a public constructor
