@@ -1,5 +1,8 @@
 DigiBit release notes:
 
+30 Jan 2014 0.1.1
++ Disallow sending to PS2H address
+
 4 Dec 2014: 0.1.0
 + Initial port to Digibyte
 + Basic Exchange rate functionality

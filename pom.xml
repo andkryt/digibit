@@ -22,7 +22,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.multibit</groupId>
     <artifactId>digibit</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <name>DigiBit</name>
     <description>A Java Swing client for Digibyte</description>
     <url>https://digibit.cryptoservices.net</url>
