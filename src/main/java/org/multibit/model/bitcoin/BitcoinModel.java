@@ -88,10 +88,10 @@ public class BitcoinModel extends AbstractModel<CoreModel> {
 
     // Default fee and feePerKB
     public static final BigInteger SEND_FEE_DEFAULT = new BigInteger("50000");
-    public static final BigInteger SEND_FEE_PER_KB_DEFAULT = new BigInteger("10000");
+    public static final BigInteger SEND_FEE_PER_KB_DEFAULT = new BigInteger("500");
     
     // Minimum fee.
-    public static final BigInteger SEND_MINIMUM_FEE = new BigInteger("10000");
+    public static final BigInteger SEND_MINIMUM_FEE = new BigInteger("500");
 
     // Maximum fee.
     public static final BigInteger SEND_MAXIMUM_FEE = new BigInteger("100000000"); // 1 DGB.
